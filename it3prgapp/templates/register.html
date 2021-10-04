@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% from "_formhelpers.html" import render_field %}
+<form method=post>
+  <dl>
+    {{ render_field(form.a) }}
+    {{ render_field(form.b) }}
+  </dl>
+  <p><input type=submit value=Register>
+</form>
+</body>
+</html>
